@@ -1159,33 +1159,6 @@
   transition: all 1s;
 }
 
-.add-box-product {
-  justify-content: center;
-  width: 100%;
-  pointer-events: none;
-  top: 188px;
-  margin: 49px 205px 0;
-}
-
-.add-product {
-  display: flex;
-  text-decoration: none;
-  font-size: 24px;
-  line-height: 29px;
-  font-weight: center;
-  border: 1px solid #f16d7f;
-  padding: 8px;
-  justify-content: center;
-  align-items: center;
-  width: 211px;
-}
-
-.add-text-product {
-  font-size: 16px;
-  line-height: 19px;
-  color: #f16d7f;
-}
-
 .catalog-singlePage {
   padding-top: 72px;
   padding-bottom: 22px;
@@ -1206,6 +1179,195 @@
   grid-template-rows: repeat(1, 1fr);
   gap: 30px;
   padding-top: 72px;
+}
+
+.shopping-cart {
+  padding-top: 90px;
+}
+.shopping-cart__line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+.shopping-cart__column {
+  display: flex;
+  border-bottom: 1px solid #eaeaea;
+  justify-content: space-between;
+}
+.shopping-cart__column-right {
+  width: 40%;
+}
+.shopping-cart__column-left {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+.shopping-cart__column-name {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #222222;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+  padding-bottom: 20px;
+}
+.shopping-cart__product {
+  display: flex;
+  gap: 21px;
+}
+.shopping-cart__transcript {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.shopping-cart__title {
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  color: #222222;
+}
+.shopping-cart__text {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #6f6e6e;
+}
+.shopping-cart__text-bold {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #575757;
+}
+.shopping-cart__input {
+  width: 54px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  text-align: center;
+}
+.shopping-cart__button-box {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 44px;
+}
+.shopping-cart__button {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  width: 235px;
+  height: 50px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+}
+.shopping-cart__button:hover {
+  color: #ffffff;
+  background-color: #f16d7f;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.main-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+  padding-top: 63px;
+  padding-bottom: 63px;
+}
+.main-form__block {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main-form__heading {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #222222;
+  text-transform: uppercase;
+}
+.main-form__text {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #222222;
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+.main-form__input {
+  width: 355px;
+  height: 45px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #b1b1b1;
+  padding-left: 18px;
+}
+.main-form__button {
+  font-size: 11px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #4d4d4d;
+  text-transform: uppercase;
+  padding: 12px 15px 12px 15px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  float: left;
+  width: 120px;
+}
+.main-form__button:hover {
+  background-color: #f16d7f;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+.main-form__price {
+  background-color: #f5f3f3;
+  text-align: right;
+  height: 214px;
+  padding: 40px;
+}
+.main-form__price-sub, .main-form__price-total {
+  display: flex;
+  text-transform: uppercase;
+  gap: 15px;
+  justify-content: flex-end;
+}
+.main-form__price-sub {
+  font-size: 11px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #4d4d4d;
+}
+.main-form__price-total {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #222222;
+  border-bottom: 1px solid #e2e2e2;
+  padding-bottom: 22px;
+}
+.main-form__price-totalpr {
+  color: #f16d7f;
+}
+.main-form__price-button {
+  min-height: 50px;
+  background-color: #f16d7f;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
 }
 
 .container {
