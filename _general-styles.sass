@@ -335,14 +335,24 @@
     &__namepage
         @include txt (24px , 20px , 900)       
         color: $site-color-select
-    &__breadcrumbs
+.breadcrumbs
+    &__ul
+        list-style-type: none
+        display: flex
+    &__li:not(:last-child)::after
+        content: '/'
+        padding-left: 5px
+        padding-right: 5px
         @include txt (14px , 20px , 300)
-        &-link
-            color: #636363
-            text-decoration: none
-            &_site
-                color: $site-color-select
-                font-weight: 700
+        color: $text-color-darkgrey
+    &__li:last-child .breadcrumbs__link
+        color: $site-color-select
+        font-weight: 700
+    &__link
+        @include txt (14px , 20px , 300)
+        color: $text-color-darkgrey
+        text-decoration: none
+
 
 .quote-form
     background-image: url(image/quote_form_banner2.jpg)
