@@ -100,6 +100,7 @@
         &-span
             width: 12px
             height: 12px
+            background-color: #ef5b70
             .red
                 background-color: #ef5b70
             .green
@@ -124,7 +125,12 @@
             path
                 fill: $text-color-select
                 transition: all 1s
-
+.card-box__filter-item 
+    option::before
+        contain: ''
+        width: 12px
+        height: 12px
+        background-color: red
   
     
 .catalog-singlePage
